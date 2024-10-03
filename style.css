@@ -1,0 +1,104 @@
+
+body{
+    background: #F8FCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.main{
+    width: 60%;
+    height: 400px;
+    background: #C1DFF7;
+    margin-top: 80px;
+    border: 2px dashed #8FC8F7;
+    border-radius: 3px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+p,input{
+    margin-left: 30px;
+}
+p{
+    padding-top: 90px;
+}
+#url{
+    width: 45%;
+    height: 25px;
+    padding: 8px;
+    border: 1px solid #8FC8F7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.error{
+    animation: error .2s linear 3;
+}
+@keyframes error{
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+}
+
+#btn{
+    width: 30%;
+    height: 40px;
+    background: black;
+    border-radius: 15px;
+    border:none;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#btn:hover{
+    background: #5b1250;
+    box-shadow: 0px 2px 20px 10px #97B1BF;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 145px;
+    display: none;
+    
+}
+@media screen and (max-width:770px){
+    .main{
+        width: 95%;
+        gap: 2px;
+    }
+}
+@media screen and (max-width:465px){
+    .main{
+        width: 95%;
+        gap: 2px;
+    }
+    img{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        top: -100px;
+        left: 230px;  
+    }
+    #btn{
+        font-size: 10px;
+    }
+    p{
+        padding-top: 50px;
+    }
+}
